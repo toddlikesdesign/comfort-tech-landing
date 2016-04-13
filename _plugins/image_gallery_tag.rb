@@ -1,5 +1,5 @@
 # Jonas Genannt <jonas@brachium-system.net>
-require 'RMagick'
+require 'rmagick'
 include Magick
 
 module Jekyll
@@ -33,7 +33,7 @@ module Jekyll
 
     def gen_thumb_image(gallery_directory, filename, thumb_filename)
       # generate thumb only if it does not exists
-      size = 300
+      size = 135
       geom = "#{size}x#{size}"
       unless File.exists?(File.join(gallery_directory,thumb_filename))
         img = Image.read(File.join(gallery_directory, filename))[0]

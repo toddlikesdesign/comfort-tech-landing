@@ -57,6 +57,35 @@ h6 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
+.valign {
+  font-size: 0;
+}
+
+.round {
+    border-radius: 100%;
+}
+
+/* Lightbox Styles */
+
+.image-row {
+    margin-top: 30px;
+}
+
+.image-thumb {
+    margin-right: 10px;
+}
+
+/* End Lightbox Styles */
+
+.valign > [class*="col"] {
+  display: inline-block;
+  float: none;
+  font-size: 14px;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+
 @media(max-width:767px) {
     .intro-message {
         padding-bottom: 15%;
@@ -79,10 +108,6 @@ h6 {
     .intro-divider {
         width: 100%;
     }
-}
-
-.img-responsive {
-    border-radius: 100%;
 }
 
 .network-name {
